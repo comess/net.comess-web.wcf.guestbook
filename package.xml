@@ -9,15 +9,13 @@
 	</packageinformation>
 	
 	<authorinformation>
-		<author>Philipp Bornemann // Comess Web.Net</author>
-		<authorurl>http://www.comess-web.net</authorurl>
+		<author><![CDATA[Philipp Bornemann]]></author>
+		<authorurl><![CDATA[http://www.comess-web.net]]></authorurl>
 	</authorinformation>
 	
-	<!--
 	<requiredpackages>
-		<requiredpackage minversion="2.0.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="2.0.0 Beta 4">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
-	-->
 	
 	<instructions type="install">
 		<instruction type="pageMenu">pageMenu.xml</instruction>

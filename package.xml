@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package name="net.comess-web.wcf.guestbook" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
 	<packageinformation>
-		<packagename>Guestbook</packagename>
+		<packagename><![CDATA[Guestbook]]></packagename>
 		<packagedescription><![CDATA[Guestbook for WoltLab Community Framework 2.0]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Ein Gästebuch für das WoltLab Community Framework 2.0]]></packagedescription>
 		<version>1.0.0 Beta 1</version> <!-- codename: contrabo -->

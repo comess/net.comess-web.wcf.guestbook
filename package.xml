@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="net.comess-web.wcf.guestbook" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename>Guestbook</packagename>
+		<packagedescription><![CDATA[Guestbook for WoltLab Community Framework 2.0]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Ein Gästebuch für das WoltLab Community Framework 2.0]]></packagedescription>
+		<version>1.0.0 Beta 1</version> <!-- codename: contrabo -->
+		<date>2013-07-04</date>
+	</packageinformation>
+	
+	<authorinformation>
+		<author>Philipp Bornemann // Comess Web.Net</author>
+		<authorurl>http://www.comess-web.net</authorurl>
+	</authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="2.0.0 Beta 4">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+	
+	<instructions type="install">
+		<instruction type="pageMenu">pageMenu.xml</instruction>
+		<instruction type="option">option.xml</instruction>
+		<instruction type="userGroupOption">userGroupOption.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
+		
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="file">files.tar</instruction>
+	</instructions>
+</package>

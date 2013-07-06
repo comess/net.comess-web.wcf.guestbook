@@ -10,7 +10,7 @@ use wcf\system\WCF;
 use wcf\util\StringUtil;
 
 /**
- * @author       Philipp Bornemann
+ * @author      Philipp Bornemann
  * @copyright	2013 Comess Web.Net
  * @license	GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  */

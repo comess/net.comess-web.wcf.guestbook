@@ -1,7 +1,16 @@
-{include file='header' pageTitle='wcf.guestbook.'|concat:$action}
+{include file='documentHeader'}
+
+<head>
+	<title>{lang}wcf.guestbook.add{/lang} - {PAGE_TITLE|language}</title>
+	
+	{include file='headInclude'}
+</head>
+
+<body id="tpl{$templateName|ucfirst}">
+{include file='header'}
 
 <header class="boxHeadline">
-        <h1>{lang}wcf.guestbook.{$action}{/lang}</h1>
+	<h1>{lang}wcf.guestbook.add{/lang}</h1>
 </header>
 
 {if $errorField}

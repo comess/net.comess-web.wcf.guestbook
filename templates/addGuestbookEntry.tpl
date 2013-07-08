@@ -29,8 +29,7 @@
 	</nav>
 </div>
 
-<form method="post" action="{if $action == 'add'}{link controller='AddGuestbookEntry'}{/link}{else}{link controller='EditGuestbookEntry' object=$guestbook}{/link}{/if}">
-	<div class="container containerPadding marginTop">
+<form method="post" action="{link controller='AddGuestbookEntry'}{/link}">
 		<fieldset>
 			<legend>{lang}wcf.global.form.data{/lang}</legend>
 			
@@ -85,30 +84,23 @@
 			{event name='dataFields'}
 		</fieldset>
 		
-		<fieldset id="messageContainer">
+		<fieldset>
 			<legend>{lang}wcf.guestbook.message{/lang}</legend>
-					
-			<dl class="wide{if $errorField == 'message'} formError{/if}">
+			<dl>
 				<dt><label for="message">{lang}wcf.guestbook.message{/lang}</label></dt>
 				<dd>
-					<textarea id="message" name="message" rows="20" cols="40">{$message}</textarea>
+					<textarea name="message" id="message" cols="40" rows="10">{$message}</textarea>
 					{if $errorField == 'message'}
 						<small class="innerError">
 							{if $errorType == 'empty'}
 								{lang}wcf.global.form.error.empty{/lang}
-							{elseif $errorType == 'tooLong'}
-								{lang}wcf.message.error.tooLong{/lang}
-							{elseif $errorType == 'censoredWordsFound'}
-								{lang}wcf.message.error.censoredWordsFound{/lang}
 							{else}
-								{lang}wcf.guestbook.message.error.{@$errorType}{/lang}
+								{lang}wcf.guestbook.error.{$errorType}{/lang}
 							{/if}
 						</small>
 					{/if}
 				</dd>
 			</dl>
-				
-			{event name='dataFields'}
 		</fieldset>
 		
 		{event name='fieldsets'}
@@ -120,4 +112,3 @@
 </form>
 
 {include file='footer'}
-{include file='wysiwyg'}
